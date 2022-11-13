@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import QRCode from 'react-native-qrcode-svg';
 
 import {
@@ -24,8 +24,6 @@ import {
     QRContainer
 } from './../components/styles';
 
-
-
 const GenerateQR = ({ navigation }) => {
     const [QR, setQR] = useState(false);
 
@@ -39,7 +37,7 @@ const GenerateQR = ({ navigation }) => {
             <QRContainer>
                 <InnerContainer>
                     < QRCode
-                        value='https://github.com/omerdikyol'
+                        value="https://www.google.com"
                         size={300}
                     />
                     <Line />
